@@ -1,5 +1,10 @@
 <div *ngIf="hero">
-    <ion-title> {{hero.name | uppercase}} Details</ion-title>
-    <div><span>id: </span>{{hero.id}}</div>
-    <div><span><ion-label>name: <ion-input [(ngModel)]="hero.name" placeholder="name"></ion-input></ion-label></span></div>
-</div>
+        <h2>{{hero.name | uppercase}} Details</h2>
+        <div><span>id: </span>{{hero.id}}</div>
+        <div>
+          <label>name:
+            <input [(ngModel)]="hero.name" placeholder="name"/>
+          </label>
+        </div>
+        <button (click)="goBack()">go back</button>
+      </div>
